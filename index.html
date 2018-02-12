@@ -83,6 +83,92 @@
       margin-top: 0;
       margin-bottom: 0;
     }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h4 {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .file-drop-area {
+      border: 1px dashed rgba(0, 0, 0, 0.4);
+      border-radius: 3px;
+      position: relative;
+      width: 450px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 26px 20px 30px;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+    }
+    .file-drop-area.is-active {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .fake-btn {
+      background-color: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      padding: 8px 15px;
+      margin-right: 8px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .file-msg {
+      font-size: small;
+      font-weight: 300;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      max-width: calc(100% - 130px);
+      vertical-align: middle;
+    }
+
+    .file-input {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+      opacity: 0;
+    }
+    .file-input:focus {
+      outline: none;
+    }
+
+
+    div.cascade {
+      padding-left: 250px;
+    }
+
+    div.gallery {
+      margin: 5px;
+      border: 5px solid #FFFFFF;
+      float: left;
+      width: 200px;
+    }
+
+    /*div.gallery:hover {
+        border: 1px solid #777;
+    }*/
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
   </style>
 </head>
 <body style="background-color: #F5F5F5">
@@ -130,29 +216,15 @@
     </div>
     <div class="tab-pane" id="trademark">
       <div class="col-md-8 col-md-offset-2">
-        <div style="background: #FFFFfFF; border-radius: 4px" class="text-center">
-          <form action="/upload" method="post" enctype="multipart/form-data" style="display:none;">
-            <input id="fileUpload" class="jfileupload" type="file" name="file"
-                   style="opacity: 0; filter: aplha(opacity=0); width: 100%;" multiple>
-          </form>
-          <script type="text/javascript">
-            function chooseFile() {
-              $("#fileUpload").click();
-            }
-          </script>
-          <div style="height: 90px;" onclick="chooseFile();">
-            <div style="height: 90px; ">
-              <a style="cursor: pointer; align: center">
-                      <span style="color: #cc3300; font-size: 3.9em">
-                      <i class="fa fa-plus-circle"></i>
-                      </span>
-                <button class="btn btn-danger btn-lg">Upload File</button>
-              </a>
-            </div>
-          </div>
-          <div id="order-documents">
-            <!-- <h3>Chinese Mfn</h3> -->
-          </div>
+        <h4>Upload your design / logo for similar logos</h4>
+        <div class="file-drop-area">
+          <span class="fake-btn">Choose files</span>
+          <span class="file-msg js-set-number">or drag and drop files here</span>
+          <input class="file-input" type="file" multiple>
+        </div>
+        <canvas id="canvasu" class="center" style="visibility: hidden; position: absolute">
+        </canvas>
+        <div class="inter" style="padding-left: 100px">
         </div>
       </div>
     </div>
@@ -613,5 +685,6 @@ console.log(input.value);
       image.src = url;
   }
 </script>
+<script src="js/index.js"></script>
 </body>
 </html>
