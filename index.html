@@ -2,13 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Flat UI - Free Bootstrap Framework and Theme</title>
-  <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+  <link rel="apple-touch-icon" sizes="57x57" href="f/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="f/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="f/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="f/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="f/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="f/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="f/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="f/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="f/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="f/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="f/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="f/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="f/favicon-16x16.png">
+  <link rel="manifest" href="f/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="f/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title>Find Similar Logos</title>
+  <meta name="description" content="Find Smilar logos by Shape and Color from the logos of the top million websites"/>
 
-  <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Loading Bootstrap -->
   <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Loading Flat UI -->
   <link href="dist/css/flat-ui.css" rel="stylesheet">
@@ -169,17 +187,67 @@
       padding: 15px;
       text-align: center;
     }
+
+    .fa {
+    padding: 20px;
+    font-size: 30px;
+    font-color: black;
+    width: 72px;
+    text-align: center;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
   </style>
 </head>
 <body style="background-color: #F5F5F5">
 <div class="container">
 
-  <div class="demo-headline">
+  <div class="demo-headline ">
     <h3 class="demo-logo">
       <div class="logo"></div>
       <i>Similar Logo Finder</i>
     </h3>
-    <p><i>From the labs of <a href="http://quickcompany.in">Quickcompany</a> </i></p>
+    <p><i> Powered &nbsp;by&nbsp; <a  href="http://quickcompany.in">Quickcompany</a> </i></p>
   </div> <!-- /demo-headline -->
   <!--       <div class="form-group has-feedback">
           <input type="text" value="" placeholder="With icon" class="form-control" />
@@ -188,14 +256,14 @@
 
   <div class="tab-content">
     <div class="tab-pane active" id="company">
-      <div class="company-search-home text-center" style="padding-top: 20px">
+      <div class="company-search-home text-center">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3">
+          <div class="col-md-8" style="padding-left: 250px;">
             <section id="ajax-example">
 
               <form autocomplete="off">
                 <div class="autocomplete input-group input-group-lg">
-                  <input class="form-control" name="name" type="text" autocomplete="off" id="search">
+                  <input class="form-control" name="name" type="text" autocomplete="off" id="search" placeholder="Enter a website URL Eg: spotify.com">
                   <span class="input-group-btn">
                           <button class="btn btn-danger btn" style="width: 80px" type="button" onclick="getResults()">Go</button>
                         </span>
@@ -204,7 +272,7 @@
 
                 <div>
                   <h5
-                    style="font-weight: 100; font-size: 24px; letter-spacing: 0px; min-width: 300px; max-width: 700px; margin: 0 auto; padding-top: 10px; color: #263238">
+                    style="font-weight: 100; font-size: 24px; letter-spacing: 0px; min-width: 300px; max-width: 700px; margin: 0 auto; padding-top: 10px; padding-left: 60px; color: #263238">
                     <i> Search for similar designs from the logos of top million websites</i>
                   </h5>
                 </div>
@@ -248,7 +316,7 @@
         <img src="https://s3.amazonaws.com/aws-website-linkdot-63uzi/images/tsbig.png" alt="Compas" class="tile-image">
         <h4 class="tile-title">Find Similar Logos</h4>
         <p class="tile-desc">Of Popular Brands From The Top Million Websites</p>
-        <a class="btn btn-danger btn-large btn-block" href="http://designmodo.com/flat">Try Now</a>
+        <a class="btn btn-danger btn-large btn-block" href="">Try Now</a>
       </div>
     </div>
 
@@ -259,7 +327,7 @@
         <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/316351-200.png" alt="Chat" class="tile-image">
         <h4 class="tile-title">Sanity Check </h4>
         <p class="tile-desc">for uniqueness / freshness of your Logo</p>
-        <a class="btn btn-danger btn-large btn-block" href="http://designmodo.com/flat">Try Now</a>
+        <a class="btn btn-danger btn-large btn-block" href="">Try Now</a>
       </div>
     </div>
 
@@ -268,16 +336,16 @@
         <img src="https://png.icons8.com/color/1600/color-palette.png" alt="Chat" class="tile-image">
         <h4 class="tile-title">Explore Logos</h4>
         <p class="tile-desc">based on multiple Color Profiles</p>
-        <a class="btn btn-danger btn-large btn-block" href="http://designmodo.com/flat">Try Now</a>
+        <a class="btn btn-danger btn-large btn-block" href="/color-picker/index.html">Try Now</a>
       </div>
     </div>
 
     <div class="col-xs-3">
       <div class="tile">
         <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/217780-200.png" alt="Pensils" class="tile-image">
-        <h4 class="tile-title">Radom Logo Generator</h4>
+        <h4 class="tile-title">Logo Generator</h4>
         <p class="tile-desc">using Generative Adversarial Networks</p>
-        <a class="btn btn-danger btn-large btn-block" href="http://designmodo.com/flat">Coming Soonish</a>
+        <a class="btn btn-danger btn-large btn-block" href="">Coming Soonish</a>
       </div>
     </div>
   </div> <!-- /tiles -->
@@ -286,23 +354,27 @@
     <h1 class="text-center"><i> Sample Results </i></h1>
     <hr class="symbol">
     <h4 class="text-center"> Shape Similarity </h4>
+    <h6 class="text-center"><i>Implemented using a mishmash of Contour, Region, Histogram & Hull techniques. </i></h6>
+
+    <h6 class="text-center"><i>( Works best with simple shapes. Expect some noisy results. )</i></h6>
+
 
     <div class="demo-browser-author"></div>
     <div class="demo-browser-content text-center" style="padding-left: 60px;">
-      <img src="https://logo.clearbit.com/monroeccc.edu?s=256" alt=""/>
-      <img src="https://logo.clearbit.com/denalioutdoor.com?s=256" alt=""/>
-      <img src="https://logo.clearbit.com/trisamples.com?s=256" alt=""/>
-      <img src="https://logo.clearbit.com/alternat.ru?s=256" alt=""/>
-      <img src="https://logo.clearbit.com/nahimunkar.org?s=256" alt=""/>
-      <img src="https://logo.clearbit.com/librimondadori.it?s=256" alt=""/>
-      <img src="https://logo.clearbit.com/machiassavings.bank?s=256" alt=""/>
-      <img src="https://logo.clearbit.com/freezeproshop.com?s=256" alt=""/>
-      <img src="https://logo.clearbit.com/amplifier.com?s=256" alt=""/>
-      <img src="https://logo.clearbit.com/cloud9fabrics.com?s=256" alt=""/>
+      <img src="https://s3.ap-south-1.amazonaws.com/clogos/2TNKOTA0L1P0ZVYX" alt=""/>
+      <img src="https://s3.ap-south-1.amazonaws.com/clogos/XKLCUA5NPFN71RUO" alt=""/>
+      <img src="https://s3.ap-south-1.amazonaws.com/clogos/Z2LI7EP7X305X7I5" alt=""/>
+      <img src="https://s3.ap-south-1.amazonaws.com/clogos/FDG4SD34NFD87JPD" alt=""/>
+      <img src="https://s3.ap-south-1.amazonaws.com/clogos/0J2YJ8DZUSW0UKY3" alt=""/>
+      <img src="https://s3.ap-south-1.amazonaws.com/clogos/KYMN5G1M03E02KU4" alt=""/>
+      <img src="https://s3.ap-south-1.amazonaws.com/clogos/Y8UFYRUBZWKXQR3Q" alt=""/>
+      <img src="https://s3.ap-south-1.amazonaws.com/clogos/48AHLMY3JZ1S6GCB" alt=""/>
+      <img src="https://s3.ap-south-1.amazonaws.com/clogos/0138LEUZDX9IWWGZ" alt=""/>
+      <img src="https://s3.ap-south-1.amazonaws.com/clogos/1FOAV1X6O5N6OM8W" alt=""/>
     </div>
 
     <h4 class="text-center"> Color Similarity </h4>
-
+    <h6 class="text-center"><i>Implmented by comparing Histograms of Downsampled images. </i></h6>
     <div class="demo-browser-google"></div>
     <div class="demo-browser-content text-center" style="padding-left: 60px;">
       <img src="https://logo.clearbit.com/chromeunboxed.com?s=256" alt=""/>
@@ -320,67 +392,35 @@
 
 
   <div class="col-sm-12" style="background-color: #F5F5F5">
-    <h1 class="text-center"><i> Love it? Let the world know </i></h1>
+    <h1 class="text-center"><i> Like it ? Let the world know </i></h1>
     <hr class="symbol">
+        <br>
     <div class="col-md-12 text-center ">
-      <a target="_blank" href="https://twitter.com/QuickCompanyIn">
-        <div class="icon-twitter"></div>
-      </a>
-      <a target="_blank" href="https://plus.google.com/+QuickcompanyIndia">
-        <div class="icon-google"></div>
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/company/10369620/">
-        <div class="icon-linkedin"></div>
-      </a>
-      <a target="_blank" href="https://www.facebook.com/quickcompany.in/">
-        <div class="icon-facebook"></div>
-      </a>
-      <a target="_blank" href="https://twitter.com/QuickCompanyIn">
-        <div class="icon-twitter"></div>
-      </a>
-      <a target="_blank" href="https://plus.google.com/+QuickcompanyIndia">
-        <div class="icon-google"></div>
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/company/10369620/">
-        <div class="icon-linkedin"></div>
-      </a>
-      <a target="_blank" href="https://www.facebook.com/quickcompany.in/">
-        <div class="icon-facebook"></div>
-      </a>
+      <a href="#" class="fa fa-reddit"></a>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-pinterest"></a>
+      <a href="#" class="fa fa-tumblr"></a>
+      <a href="#" class="fa fa-stumbleupon"></a>
+    </div>
+    <br> <br>
       <div class="company-search text-center" style="padding-top: 20px;">
         <br> <br>
         <img src="https://s3.amazonaws.com/aws-website-linkdot-63uzi/images/com2.png"
              style="width: 360px; padding-bottom: 0px; border: 3px solid black">
       </div>
-      <h1 class="text-center" style="padding-top: 40px;"><i>What next? </i></h1>
+      <h1 class="text-center" style="padding-top: 40px;"><i>What next ? </i></h1>
       <hr class="symbol">
       <!--               <h3 class="text-center" style="padding-top: 10px;"> <i>  </i> </h1>
        -->
-      <ul style="padding-left: 30px;">
-        <li> Add more logos from all over the world</li>
-        <li> Improve the Shape Similarity metric using Gestalt Principles and Deep Learning</li>
-        <li> Add images from Voynich Manuscript and other medieval manuals</li>
-        <li> Add Soviet Propaganda Posters and Constructivist designs</li>
-        <li> Random Logo Generator using Generative Adversarial Networks</li>
-        <li> Reddit Bot and Mobile Apps maybe</li>
+      <ul class="text-center" style="padding-left: 30px;">
+        <p style="font-size: 22px; margin-bottom: 2px;"> <i> Add curated collections of logos and designs </i></p>
+        <p style="font-size: 22px; margin-bottom: 2px;"><i>Explore Deep Learning with tagged data sets.<i></p>
+        <p style="font-size: 22px; margin-bottom: 2px;"><i> Logo Generator using Generative Adversarial Networks<i></p>
+        <p style="font-size: 22px; margin-bottom: 2px;"> <i>Reddit Bots and Mobile Applications<i></p>
       </ul>
-      <p><i> If you found this useful, please consider donating. I'd love to get out of my basement and gather some
-        sunshine! </i></p>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="ABKF9HNFXTKZN">
-        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_subscribeCC_LG.gif" border="0"
-               name="submit" alt="PayPal – The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-      </form>
-
-      <a
-        href="bitcoin:1BPVHqxcMAdPEtfSHLLPfpqucrDfgCGgD4?amount=0.01"
-      >
-        Bitcoin Wallet: 1BPVHqxcMAdPEtfSHLLPfpqucrDfgCGgD4
-        <br>
-        XRP Wallet: 1BPVHqxcMAdPEtfSHLLPfpqucrDfgCGgD4
-      </a>
+      
 
       <div class="col-md-12">
 
@@ -396,7 +436,6 @@
                                               type="submit">Subscribe</button> </span></div>
         </div>
         <br> <br> <br> <br>
-
       </div>
 
       <h1 class="text-center" style="padding-top: 40px;"><i> Made Possible By </i></h1>
@@ -406,16 +445,38 @@
         <img src="https://logo.clearbit.com/sci-hub.tw?s=256" alt=""/>
         <img src="https://www.pearsonhighered.com/assets/bigcovers/0/1/3/0/0130307963.jpg" alt=""
              style="height: 144px;"/>
+        <img src="https://numfocus.org/wp-content/uploads/2016/07/numpy-logo-300.png" alt="" style="height: 144px;"/>
 
-        <img src="https://logo.clearbit.com/opensource.org?s=256" alt=""/>
+        <img src="https://logo.clearbit.com/opencv.org?s=256" alt=""/>
         <img src="https://logo.clearbit.com/python.org?s=256" alt=""/>
-        <img src="https://logo.clearbit.com/anaconda.org?s=256" alt=""/>
-        <img src="https://logo.clearbit.com/falconframework.org?s=256" alt=""/>
-        <img src="https://logo.clearbit.com/scrapy.org?s=256" alt=""/>
-        <img src="https://logo.clearbit.com/codepen.io?s=256" alt=""/>
         <img src="https://logo.clearbit.com/clearbit.com?s=256" alt=""/>
-
+        <img src="https://logo.clearbit.com/falconframework.org?s=256" alt=""/>
+        <img src="https://avatars3.githubusercontent.com/u/897180" alt="" style="height: 144px;"/>
+        <img src="https://devblogs.nvidia.com/wp-content/uploads/2017/10/numba_blue_icon_rgb.png" alt="" style="height: 144px;"/>
       </div>
+
+
+      <h1 class="text-center" style="padding-top: 40px;"><i> Find this Useful ? </i></h1>
+      <hr class="symbol">
+      <div class="col-md-12">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <p><i> Please consider subscribing / donating. I'd love to get out of my basement and gather some
+            sunshine! </i></p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="ABKF9HNFXTKZN">
+            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_subscribeCC_LG.gif" border="0"
+                   name="submit" alt="PayPal – The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+          </form>
+          <br><br>
+          <p> <b> Bitcoin Wallet </b>: 1BPVHdumDUDUMdumSHLLPfpqucrDfgCGgD4 </p>
+          <p>  <b>XRP Wallet </b>: 1BPVHqxcDUDUMdumSHLLPfpqucrDfgCGgD4</p>
+          </a>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </div> <!-- /container -->
@@ -565,6 +626,7 @@ console.log(input.value);
             /*close the list of autocompleted values,
             (or any other open lists of autocompleted values:*/
             closeAllLists();
+            getResults();
             // ajax.open("GET", "https://autocomplete.clearbit.com/v1/companies/suggest?query=" + input.value, true);
             // ajax.send();
             // ajax.onload = function () {              
